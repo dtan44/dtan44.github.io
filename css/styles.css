@@ -1,0 +1,401 @@
+/*
+ * Page Layout CSS
+ */
+.title {
+    height:350px;
+    width:100%;
+    margin-top: 8%;
+}
+
+#title-left {
+    margin-left: 150px;
+}
+
+#title-right {
+  margin-left: -150px;
+  margin-right: 0px;
+}
+
+.horz_divider {
+    width: 90%;
+    height: 50px;
+    border-top: 2px dashed crimson;
+    font-size: 0;
+    margin: 0 auto;
+}
+
+.left_column {
+    height: 1600px;
+    width: 30%;
+    float: left;
+    margin-left: 4%;
+}
+
+.vert_divider {
+    border-right: 2px dashed crimson;
+    width: 50px;
+    height: 90%;
+    font-size: 0;
+    margin-right: 50px;
+    float: right;
+}
+
+.right_column {
+    height: 1600px;
+    width: 65%;
+    float: left;
+}
+
+#body {
+  margin-top: 100px;
+}
+
+.legendbox {
+  display: inline-block;
+  padding-right: 14px;  
+  padding-left: 14px;  
+  border-radius: 25px;
+  margin-top: 5%
+}
+
+#topbar {
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  background-color: #FFD3DA;
+  padding: 20;
+  height: 16%;
+  width: 110%;
+  padding-left: 10px;
+  margin-bottom: 2px;
+}
+
+div #preferences {
+  height: 38%;
+}
+
+div #nodes {
+  margin-top: 40px;
+  height: 25%;
+}
+
+div #parallel {
+  margin-top: 35px;
+  height: 15%;
+}
+
+div .selection {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+div .topwrapper {
+
+}
+
+text {
+  font: 8px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+html,
+body {
+  font: 12px/18px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  background-color: #FFFEFE;
+  height:100%;
+}
+
+p {
+  background-color: #FFD3DA;
+  border-radius: 10px;
+  padding: 10px; 
+}
+
+/*
+ * Bar Charts CSS
+ */
+#prefVis {
+  width: 60%;
+  float: left;
+}
+
+#matchVis {
+
+  width: 40%;
+  float: left;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+/*
+ * Parallel Coordinates CSS
+ */
+.parcoordleft {
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.parcoordright {
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+svg {
+    font: 10px sans-serif;
+}
+
+.axis line,
+.axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.foreground:hover {
+    stroke-opacity: 1;
+    stroke: gold;
+}
+
+/*
+ * Node and Links CSS
+ */
+
+#nodevis {
+  height: 25%;
+}
+
+.link {
+  stroke: #999999;
+  stroke-width: 1.5px;
+}
+
+.link--source,
+.link--target {
+  stroke-opacity: 1;
+  stroke-width: 3px;
+}
+
+.link--source {
+  stroke: #9ECACF;
+}
+
+.link--target {
+  stroke: #E6A4AE;
+}
+
+.position {
+  font-family: Arial;
+}
+
+/*
+ *  Tool Tip / Personal Box CSS
+*/
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 110px;
+    height: 20px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightgrey;
+    border: 0px;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.personinfo {
+    height: 22%;
+    width: 23%;
+    float: left;
+}
+
+#personalbox {
+    display: inline-block;
+    height: 50%;
+    width: 100%;
+    border-style: dashed;
+    border-radius: 10px;
+}
+
+#linebox {
+    display: inline-block;
+    height: 50%;
+    width: 100%;
+    border-style:dashed;
+    border-radius: 10px;
+}
+
+.information {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}
+
+#nodelegend {
+  display: inline-block;
+  margin-left: 20%
+}
+
+/*
+ * Copyright (c) 2012-2013 Thibaut Courouble
+ * http://www.cssflow.com
+ * Licensed under the MIT License
+ *
+ * Sass/SCSS source: http://goo.gl/qEV26
+ * PSD by Hemn Chawroka: http://goo.gl/nXZHJ
+ */
+
+.container {
+  margin: 80px auto;
+  width: 400px;
+  text-align: center;
+}
+
+.container > .dropdown {
+  margin: 0 20px;
+  vertical-align: top;
+}
+
+.dropdown {
+  display: block;;
+  position: relative;
+  overflow: hidden;
+  height: 26px;
+  width: 150px;
+  background: #f2f2f2;
+  border: 1px solid;
+  border-color: white #f7f7f7 whitesmoke;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  margin-left: 12px;
+  margin-top: 5px;
+}
+
+.dropdown:before, .dropdown:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 9px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 4px dashed;
+  border-color: #888888 transparent;
+  pointer-events: none;
+}
+
+.dropdown:before {
+  border-bottom-style: solid;
+  border-top: none;
+}
+
+.dropdown:after {
+  margin-top: 7px;
+  border-top-style: solid;
+  border-bottom: none;
+}
+
+.dropdown-select {
+  position: relative;
+  width: 130%;
+  margin: 0;
+  padding: 2px 8px 6px 10px;
+  height: 28px;
+  line-height: 14px;
+  font-size: 10px;
+  color: #62717a;
+  text-shadow: 0 1px white;
+  background: #f2f2f2; /* Fallback for IE 8 */
+  background: rgba(0, 0, 0, 0) !important; /* "transparent" doesn't work with Opera */
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.dropdown-select:focus {
+  z-index: 3;
+  width: 100%;
+  color: #394349;
+  outline: 2px solid #49aff2;
+  outline: 2px solid -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.dropdown-select > option {
+  margin: 3px;
+  padding: 6px 8px;
+  text-shadow: none;
+  background: #f2f2f2;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Fix for IE 8 putting the arrows behind the select element. */
+
+.lt-ie9 .dropdown {
+  z-index: 1;
+}
+
+.lt-ie9 .dropdown-select {
+  z-index: -1;
+}
+
+.lt-ie9 .dropdown-select:focus {
+  z-index: 3;
+}
+
+/* Dirty fix for Firefox adding padding where it shouldn't. */
+
+@-moz-document url-prefix() {
+  .dropdown-select {
+    padding-left: 6px;
+  }
+}
+
+.dropdown-dark {
+  background: #444;
+  border-color: #111111 #0a0a0a black;
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-dark:before {
+  border-bottom-color: #aaa;
+}
+
+.dropdown-dark:after {
+  border-top-color: #aaa;
+}
+
+.dropdown-dark .dropdown-select {
+  color: #aaa;
+  text-shadow: 0 1px black;
+  background: #444;  /* Fallback for IE 8 */
+}
+
+.dropdown-dark .dropdown-select:focus {
+  color: #ccc;
+}
+
+.dropdown-dark .dropdown-select > option {
+  background: #444;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+}
