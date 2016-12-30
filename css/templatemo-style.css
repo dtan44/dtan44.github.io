@@ -281,6 +281,7 @@ hr {
 */  background-color:#8AB5CF;
   color: white;
   overflow-y: hidden;
+  z-index:3;
 }
 @media screen and (max-width: 1290px) {
   .sidebar-menu {
@@ -423,9 +424,9 @@ h3.profile-title {
 -------------------------------------------------------- */
 /*------ banner ------ */
 .banner-bg {
-  padding: 260px 80px;
+  padding: 260px 300px;
   position: relative;
-  width: 82%;
+  width: 100%;
   height: 5px;
   background: url("../img/banner.jpg");
   background-repeat: no-repeat;
