@@ -424,7 +424,7 @@ h3.profile-title {
 -------------------------------------------------------- */
 /*------ banner ------ */
 .banner-bg {
-  padding: 260px 300px;
+  padding: 260px 20%;
   position: relative;
   width: 100%;
   height: 5px;
